@@ -12,25 +12,25 @@ typedef struct BinaryTreeNode
 	struct BinaryTreeNode* _right;
 }BTNode;
 
-// Í¨¹ıÇ°Ğò±éÀúµÄÊı×é"ABD##E#H##CF##G##"¹¹½¨¶ş²æÊ÷
+// é€šè¿‡å‰åºéå†çš„æ•°ç»„"ABD##E#H##CF##G##"æ„å»ºäºŒå‰æ ‘
 BTNode* BinaryTreeCreate(BTDataType* a, int n, int* pi);
-// ¶ş²æÊ÷Ïú»Ù
+// äºŒå‰æ ‘é”€æ¯
 void BinaryTreeDestory(BTNode** root);
-// ¶ş²æÊ÷½Úµã¸öÊı
+// äºŒå‰æ ‘èŠ‚ç‚¹ä¸ªæ•°
 int BinaryTreeSize(BTNode* root);
-// ¶ş²æÊ÷Ò¶×Ó½Úµã¸öÊı
+// äºŒå‰æ ‘å¶å­èŠ‚ç‚¹ä¸ªæ•°
 int BinaryTreeLeafSize(BTNode* root);
-// ¶ş²æÊ÷µÚk²ã½Úµã¸öÊı
+// äºŒå‰æ ‘ç¬¬kå±‚èŠ‚ç‚¹ä¸ªæ•°
 int BinaryTreeLevelKSize(BTNode* root, int k);
-// ¶ş²æÊ÷²éÕÒÖµÎªxµÄ½Úµã
+// äºŒå‰æ ‘æŸ¥æ‰¾å€¼ä¸ºxçš„èŠ‚ç‚¹
 BTNode* BinaryTreeFind(BTNode* root, BTDataType x);
-// ¶ş²æÊ÷Ç°Ğò±éÀú 
+// äºŒå‰æ ‘å‰åºéå† 
 void BinaryTreePrevOrder(BTNode* root);
-// ¶ş²æÊ÷ÖĞĞò±éÀú
+// äºŒå‰æ ‘ä¸­åºéå†
 void BinaryTreeInOrder(BTNode* root);
-// ¶ş²æÊ÷ºóĞò±éÀú
+// äºŒå‰æ ‘ååºéå†
 void BinaryTreePostOrder(BTNode* root);
-// ²ãĞò±éÀú
+// å±‚åºéå†
 void BinaryTreeLevelOrder(BTNode* root);
-// ÅĞ¶Ï¶ş²æÊ÷ÊÇ·ñÊÇÍêÈ«¶ş²æÊ÷
-int BinaryTreeComplete(BTNode* root);
+// åˆ¤æ–­äºŒå‰æ ‘æ˜¯å¦æ˜¯å®Œå…¨äºŒå‰æ ‘
+bool BinaryTreeComplete(BTNode* root);
